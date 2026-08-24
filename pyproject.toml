@@ -1,0 +1,37 @@
+[project]
+name = "embed-playground"
+version = "0.1.0"
+description = "Compare lexical (TF-IDF) and dense (sentence-transformers) semantic search on a bundled DeFi/Web3 corpus — on-device, keyless, with a retrieval benchmark and a Streamlit playground."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "pxlcrtiv" }]
+keywords = ["embeddings", "semantic-search", "retrieval", "rag", "tf-idf", "sentence-transformers", "defi", "nlp"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Topic :: Text Processing :: Indexing",
+]
+
+[project.scripts]
+embed-playground = "embed_playground.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+dense = ["sentence-transformers"]  # optional dense-embedding tier
+app = ["streamlit"]                # optional interactive playground
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["embed_playground*"]
+
+[tool.setuptools.package-data]
+"embed_playground.data" = ["*.json"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

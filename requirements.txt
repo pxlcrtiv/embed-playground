@@ -1,0 +1,6 @@
+# Runtime dependencies: NONE — the default path (lexical TF-IDF + RRF hybrid
+# fallback) is pure Python stdlib and runs fully offline.
+# Optional:
+#   pip install "embed-playground[dense]"  -> sentence-transformers dense tier
+#   pip install "embed-playground[app]"    -> Streamlit playground
+# Dev tools: pytest (tests), ruff (lint).

@@ -1,0 +1,21 @@
+{
+  "note": "Retrieval benchmark: 16 original queries over the bundled corpus. 'intent' labels the retrieval challenge: definitional (keywords in doc), paraphrase (meaning without shared keywords), cross-context (concepts from two categories). Lexical tier is expected to shine on definitional items, dense on paraphrase items.",
+  "queries": [
+    {"id": "q01", "query": "flash loan mechanics", "relevant": ["d02"], "intent": "definitional"},
+    {"id": "q02", "query": "how do bots steal money from my trades", "relevant": ["d32"], "intent": "paraphrase"},
+    {"id": "q03", "query": "minting a unique digital artwork on chain", "relevant": ["d07"], "intent": "paraphrase"},
+    {"id": "q04", "query": "regain access to my wallet after losing my phone", "relevant": ["d23"], "intent": "paraphrase"},
+    {"id": "q05", "query": "what happens when the price feed lies", "relevant": ["d15"], "intent": "definitional"},
+    {"id": "q06", "query": "pay transaction fees using a credit card stablecoin", "relevant": ["d22"], "intent": "paraphrase"},
+    {"id": "q07", "query": "prove a computation without revealing the inputs", "relevant": ["d27"], "intent": "paraphrase"},
+    {"id": "q08", "query": "creator income from secondary NFT sales", "relevant": ["d09"], "intent": "paraphrase"},
+    {"id": "q09", "query": "write down my recovery words on paper", "relevant": ["d19"], "intent": "definitional"},
+    {"id": "q10", "query": "why do bridge withdrawals take a week to settle", "relevant": ["d26", "d30"], "intent": "cross-context"},
+    {"id": "q11", "query": "startup treasury wallet with multiple signers", "relevant": ["d21"], "intent": "definitional"},
+    {"id": "q12", "query": "game items with multiple copies and rare ones", "relevant": ["d08"], "intent": "definitional"},
+    {"id": "q13", "query": "pool drained by a malicious contract exploit", "relevant": ["d13", "d18"], "intent": "cross-context"},
+    {"id": "q14", "query": "move stablecoins from ethereum to another chain", "relevant": ["d28"], "intent": "definitional"},
+    {"id": "q15", "query": "who decides the order of transactions in a block", "relevant": ["d31", "d29"], "intent": "cross-context"},
+    {"id": "q16", "query": "bots copying pending trades to profit", "relevant": ["d33"], "intent": "paraphrase"}
+  ]
+}
