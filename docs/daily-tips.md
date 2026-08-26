@@ -18,3 +18,8 @@ Random ordering or hash-order iteration makes ranking bugs nondeterministic. Sor
 
 > `embed-playground search flash loan mechanics --top-k 3`
 
+
+## 2026-08-26 — Retrieval tip of the day: MRR gaming is real
+
+Short queries with exactly one obvious doc inflate MRR. Mix multi-relevant queries (like this repo's cross-context items) or the metric flatters your demo.
+
