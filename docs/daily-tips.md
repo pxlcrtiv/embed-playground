@@ -23,3 +23,8 @@ Random ordering or hash-order iteration makes ranking bugs nondeterministic. Sor
 
 Short queries with exactly one obvious doc inflate MRR. Mix multi-relevant queries (like this repo's cross-context items) or the metric flatters your demo.
 
+
+## 2026-08-27 — Retrieval tip of the day: Fallbacks keep CI honest
+
+A dense tier that needs a 90MB download cannot run in every CI. Keep the lexical tier as the offline golden path and treat dense as an optional accelerator.
+
