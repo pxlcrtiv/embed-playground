@@ -28,3 +28,10 @@ Short queries with exactly one obvious doc inflate MRR. Mix multi-relevant queri
 
 A dense tier that needs a 90MB download cannot run in every CI. Keep the lexical tier as the offline golden path and treat dense as an optional accelerator.
 
+
+## 2026-08-28 — Retrieval tip of the day: Watch the long tail of the corpus
+
+Embedding quality concentrates on frequent concepts. Measure recall per category; the category with the worst recall is your data problem, not your model problem.
+
+> `embed-playground eval --tier lexical --detail`
+
