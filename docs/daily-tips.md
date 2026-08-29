@@ -35,3 +35,8 @@ Embedding quality concentrates on frequent concepts. Measure recall per category
 
 > `embed-playground eval --tier lexical --detail`
 
+
+## 2026-08-29 — Retrieval tip of the day: Rerankers change the game
+
+Cross-encoder rerankers on the top-50 retire most hybrid tuning fights. First retrieval breadth (recall@50), then rerank precision — never the reverse.
+
