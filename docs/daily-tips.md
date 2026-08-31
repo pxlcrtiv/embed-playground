@@ -45,3 +45,10 @@ Cross-encoder rerankers on the top-50 retire most hybrid tuning fights. First re
 
 A perfect hit with an unreadable snippet loses the user. Keep extraction clean: title, category, and a 1-2 sentence window, like this playground's table.
 
+
+## 2026-08-31 — Retrieval tip of the day: Evaluation belongs in the repo
+
+A benchmark script next to the code means every PR can regress retrieval. Golden numbers in tests turn silent ranking drift into a failed build.
+
+> `pytest tests/ -q`
+
