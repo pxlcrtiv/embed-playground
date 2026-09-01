@@ -52,3 +52,8 @@ A benchmark script next to the code means every PR can regress retrieval. Golden
 
 > `pytest tests/ -q`
 
+
+## 2026-09-01 — Retrieval tip of the day: Document your negative results
+
+'Dense missed q03, lexical missed q02' is the most valuable paragraph in your README. It teaches users where each tier fails — that is how tools get trusted.
+
