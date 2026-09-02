@@ -57,3 +57,8 @@ A benchmark script next to the code means every PR can regress retrieval. Golden
 
 'Dense missed q03, lexical missed q02' is the most valuable paragraph in your README. It teaches users where each tier fails — that is how tools get trusted.
 
+
+## 2026-09-02 — Retrieval tip of the day: Query rewriting is preprocessing
+
+Users type fragments ('flash loan how'), models expect sentences. Cheap normalization — case, stopwords, expansion of common abbreviations — buys consistent gains.
+
