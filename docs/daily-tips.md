@@ -62,3 +62,8 @@ A benchmark script next to the code means every PR can regress retrieval. Golden
 
 Users type fragments ('flash loan how'), models expect sentences. Cheap normalization — case, stopwords, expansion of common abbreviations — buys consistent gains.
 
+
+## 2026-09-03 — Retrieval tip of the day: Latency is a benchmark metric
+
+Dense search on 36 docs is instant; on 36 million it is an index problem. Record time-per-query in every eval run before scaling claims get made.
+
