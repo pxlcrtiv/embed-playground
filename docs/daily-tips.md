@@ -74,3 +74,10 @@ Before reaching for embeddings, score your problem with TF-IDF cosine. It is fre
 
 > `embed-playground eval --tier lexical`
 
+
+## 2026-09-05 — Retrieval tip of the day: Recall@k is the question, MRR is the ranking
+
+Recall@5 asks 'did the answer appear?', MRR asks 'how high?'. RAG needs both: a 100% recall with rank-50 retrieval is still a failed pipeline.
+
+> `embed-playground eval --tier dense --detail`
+
