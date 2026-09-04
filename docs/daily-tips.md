@@ -67,3 +67,10 @@ Users type fragments ('flash loan how'), models expect sentences. Cheap normaliz
 
 Dense search on 36 docs is instant; on 36 million it is an index problem. Record time-per-query in every eval run before scaling claims get made.
 
+
+## 2026-09-04 — Retrieval tip of the day: TF-IDF is the baseline that never blinks
+
+Before reaching for embeddings, score your problem with TF-IDF cosine. It is free, deterministic, and often embarrassingly competitive on keyword-shaped queries.
+
+> `embed-playground eval --tier lexical`
+
