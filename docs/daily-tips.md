@@ -81,3 +81,10 @@ Recall@5 asks 'did the answer appear?', MRR asks 'how high?'. RAG needs both: a 
 
 > `embed-playground eval --tier dense --detail`
 
+
+## 2026-09-06 — Retrieval tip of the day: Paraphrase queries separate lexical from semantic
+
+If every query shares words with its answer doc, lexical wins and you learn nothing. Write paraphrase queries ('bots steal my trades') to see what dense retrieval actually buys.
+
+> `embed-playground compare how do bots steal money from my trades`
+
