@@ -88,3 +88,8 @@ If every query shares words with its answer doc, lexical wins and you learn noth
 
 > `embed-playground compare how do bots steal money from my trades`
 
+
+## 2026-09-07 — Retrieval tip of the day: Embeddings are not magic, they are priors
+
+A sentence-transformer maps text to a learned prior space. The prior reflects its training data; domain jargon ('flash loan', 'MEV') is where generic models guess wrong.
+
