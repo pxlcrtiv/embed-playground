@@ -93,3 +93,10 @@ If every query shares words with its answer doc, lexical wins and you learn noth
 
 A sentence-transformer maps text to a learned prior space. The prior reflects its training data; domain jargon ('flash loan', 'MEV') is where generic models guess wrong.
 
+
+## 2026-09-08 — Retrieval tip of the day: Hybrid is a fusion, not a feature
+
+RRF fusion combines rankings, and it is only as good as its weakest tier. Benchmark each tier alone before fusing — a broken lexical tier quietly drags the hybrid down.
+
+> `embed-playground eval --tier hybrid`
+
