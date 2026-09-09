@@ -100,3 +100,8 @@ RRF fusion combines rankings, and it is only as good as its weakest tier. Benchm
 
 > `embed-playground eval --tier hybrid`
 
+
+## 2026-09-09 — Retrieval tip of the day: Pin your embedding model version
+
+A newer MiniLM checkpoint can silently re-rank your entire corpus. Record the model id and hash with the benchmark results or your leaderboard is untrustworthy.
+
