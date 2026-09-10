@@ -105,3 +105,8 @@ RRF fusion combines rankings, and it is only as good as its weakest tier. Benchm
 
 A newer MiniLM checkpoint can silently re-rank your entire corpus. Record the model id and hash with the benchmark results or your leaderboard is untrustworthy.
 
+
+## 2026-09-10 — Retrieval tip of the day: Normalize inputs before encoding
+
+HTML tags, markdown, and full-width punctuation corrupt embeddings. Clean both corpus and queries through the same pipeline or you measure your parser, not the model.
+
