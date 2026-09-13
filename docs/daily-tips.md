@@ -122,3 +122,8 @@ Cosine similarity and RRF scores are ordinal, not calibrated. Thresholds tuned o
 
 > `embed-playground eval --tier lexical --format json`
 
+
+## 2026-09-13 — Retrieval tip of the day: Metadata filters beat bigger models
+
+If users always search within a category, filter by category first and rank within it. RAG pipelines that skip structural filters are leaving recall on the table.
+
