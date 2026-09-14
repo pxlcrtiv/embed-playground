@@ -127,3 +127,8 @@ Cosine similarity and RRF scores are ordinal, not calibrated. Thresholds tuned o
 
 If users always search within a category, filter by category first and rank within it. RAG pipelines that skip structural filters are leaving recall on the table.
 
+
+## 2026-09-14 — Retrieval tip of the day: Test with queries nobody wrote
+
+The queries in your README demo are the ones your system passes. Keep a held-out set of natural, noisy, multi-intent queries for honest evaluation.
+
