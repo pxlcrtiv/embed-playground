@@ -132,3 +132,10 @@ If users always search within a category, filter by category first and rank with
 
 The queries in your README demo are the ones your system passes. Keep a held-out set of natural, noisy, multi-intent queries for honest evaluation.
 
+
+## 2026-09-15 — Retrieval tip of the day: Zero-shot embeddings need domain probes
+
+Before fine-tuning, run a small benchmark (this repo's 16 queries) with the generic model. 75-90% recall is often enough; fine-tuning is for the last 10%.
+
+> `embed-playground eval --tier dense`
+
