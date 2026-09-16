@@ -139,3 +139,8 @@ Before fine-tuning, run a small benchmark (this repo's 16 queries) with the gene
 
 > `embed-playground eval --tier dense`
 
+
+## 2026-09-16 — Retrieval tip of the day: The corpus is the interface
+
+Users never see your index, they see your docs. Clean, concrete, one-topic-per-doc writing improves every retrieval metric more than any model change.
+
