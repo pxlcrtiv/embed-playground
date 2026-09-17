@@ -144,3 +144,10 @@ Before fine-tuning, run a small benchmark (this repo's 16 queries) with the gene
 
 Users never see your index, they see your docs. Clean, concrete, one-topic-per-doc writing improves every retrieval metric more than any model change.
 
+
+## 2026-09-17 — Retrieval tip of the day: Determinism is a debugging tool
+
+Random ordering or hash-order iteration makes ranking bugs nondeterministic. Sort by score, then id, and golden-test the top of the list.
+
+> `embed-playground search flash loan mechanics --top-k 3`
+
