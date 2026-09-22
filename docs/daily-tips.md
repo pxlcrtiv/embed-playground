@@ -173,3 +173,8 @@ Embedding quality concentrates on frequent concepts. Measure recall per category
 
 Cross-encoder rerankers on the top-50 retire most hybrid tuning fights. First retrieval breadth (recall@50), then rerank precision — never the reverse.
 
+
+## 2026-09-22 — Retrieval tip of the day: Snippet quality is a ranking signal
+
+A perfect hit with an unreadable snippet loses the user. Keep extraction clean: title, category, and a 1-2 sentence window, like this playground's table.
+
