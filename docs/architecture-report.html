@@ -10,7 +10,7 @@
 </head>
 <body class="bg-gray-950 text-gray-200 p-6 max-w-5xl mx-auto">
 <h1 class="text-2xl font-bold text-white mb-1">Architecture Report</h1>
-<p class="text-sm text-gray-500 mb-6">/Users/admin/portfolio/repos/embed-playground — scanned 2026-09-26T14:36:14.294521+00:00</p>
+<p class="text-sm text-gray-500 mb-6">/Users/admin/portfolio/repos/embed-playground — scanned 2026-09-26T14:37:41.885046+00:00</p>
 
 <div class="grid grid-cols-3 gap-4 mb-8">
   <div class="bg-gray-900 rounded-lg p-4 text-center">
@@ -28,6 +28,13 @@
 </div>
 
 
+    <div class="bg-gray-900 border border-amber-500/30 rounded-lg p-4 mb-6">
+      <div class="text-sm text-amber-400 font-semibold mb-1">Top recommendation</div>
+      <code class="text-white">app.py</code>
+      <p class="text-sm text-gray-400 mt-1">High coupling: 4 internal imports</p>
+      <p class="text-xs text-gray-600 mt-2">Run the full <code>improve-codebase-architecture</code> skill on this repo to grill through the deepening.</p>
+    </div>
+
 <h2 class="text-lg font-semibold text-white mt-8 mb-3">High Coupling</h2>
         <div class="bg-gray-900 rounded-lg p-4 mb-3">
           <code class="text-sm text-purple-400">app.py</code>
@@ -42,6 +49,53 @@
           <p class="text-xs text-gray-500 mt-1">Imports 4 internal modules: backends, core, report, backends</p>
         </div>
 
+
+    <h2 class="text-lg font-semibold text-white mt-8 mb-3">Dependency Graph</h2>
+    <div class="bg-gray-900 rounded-lg p-4 mb-3">
+      <pre class="text-xs text-gray-400 overflow-x-auto">graph TD
+  app_py --> __future__
+  app_py --> functools
+  app_py --> streamlit
+  app_py --> embed_playground
+  tests_test_embed_playground_py --> __future__
+  tests_test_embed_playground_py --> json
+  tests_test_embed_playground_py --> pytest
+  tests_test_embed_playground_py --> embed_playground
+  embed_playground_core_py --> __future__
+  embed_playground_core_py --> math
+  embed_playground_core_py --> re
+  embed_playground_core_py --> dataclasses
+  embed_playground_backends_py --> __future__
+  embed_playground_backends_py --> math
+  embed_playground_backends_py --> dataclasses
+  embed_playground_backends_py --> pathlib
+  embed_playground_backends_py --> core
+  embed_playground_backends_py --> json
+  embed_playground_backends_py --> torch
+  embed_playground_backends_py --> sentence_transformers
+  embed_playground_cli_py --> __future__
+  embed_playground_cli_py --> argparse
+  embed_playground_cli_py --> sys
+  embed_playground_cli_py --> functools
+  embed_playground_cli_py --> backends
+  embed_playground_cli_py --> core
+  embed_playground_cli_py --> report
+  embed_playground_cli_py --> importlib
+  embed_playground_cli_py --> subprocess
+  embed_playground_cli_py --> json
+  embed_playground_report_py --> __future__
+  embed_playground_report_py --> json
+  embed_playground_report_py --> backends
+  embed_playground_report_py --> core
+  scripts_daily_update_py --> __future__
+  scripts_daily_update_py --> datetime
+  scripts_daily_update_py --> json
+  scripts_daily_update_py --> os
+  scripts_daily_update_py --> re
+  scripts_daily_update_py --> subprocess
+  scripts_daily_update_py --> sys
+  scripts_daily_update_py --> pathlib</pre>
+    </div>
 
 </body>
 </html>
