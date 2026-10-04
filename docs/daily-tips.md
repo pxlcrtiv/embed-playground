@@ -243,3 +243,8 @@ A newer MiniLM checkpoint can silently re-rank your entire corpus. Record the mo
 
 HTML tags, markdown, and full-width punctuation corrupt embeddings. Clean both corpus and queries through the same pipeline or you measure your parser, not the model.
 
+
+## 2026-10-04 — Retrieval tip of the day: Chunking is a retrieval decision
+
+A paragraph is not a document. Chunk size changes recall more than any model swap; benchmark 128/256/512-token chunks before blaming the encoder.
+
