@@ -248,3 +248,8 @@ HTML tags, markdown, and full-width punctuation corrupt embeddings. Clean both c
 
 A paragraph is not a document. Chunk size changes recall more than any model swap; benchmark 128/256/512-token chunks before blaming the encoder.
 
+
+## 2026-10-06 — Retrieval tip of the day: Metadata filters beat bigger models
+
+If users always search within a category, filter by category first and rank within it. RAG pipelines that skip structural filters are leaving recall on the table.
+
