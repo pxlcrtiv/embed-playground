@@ -374,3 +374,10 @@ HTML tags, markdown, and full-width punctuation corrupt embeddings. Clean both c
 
 A paragraph is not a document. Chunk size changes recall more than any model swap; benchmark 128/256/512-token chunks before blaming the encoder.
 
+
+## 2026-10-28 — Retrieval tip of the day: Scores are not probabilities
+
+Cosine similarity and RRF scores are ordinal, not calibrated. Thresholds tuned on one corpus fail on the next; evaluate per corpus, per domain.
+
+> `embed-playground eval --tier lexical --format json`
+
