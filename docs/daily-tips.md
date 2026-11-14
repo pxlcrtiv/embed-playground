@@ -462,6 +462,7 @@ Dense search on 36 docs is instant; on 36 million it is an index problem. Record
 
 ## 2026-11-12 — Retrieval tip of the day: TF-IDF is the baseline that never blinks
 
+<<<<<<< Updated upstream
 Before reaching for embeddings, score your problem with TF-IDF cosine. It is free, deterministic, and often embarrassingly competitive on keyword-shaped queries.
 
 > `embed-playground eval --tier lexical`
@@ -472,4 +473,14 @@ Before reaching for embeddings, score your problem with TF-IDF cosine. It is fre
 Recall@5 asks 'did the answer appear?', MRR asks 'how high?'. RAG needs both: a 100% recall with rank-50 retrieval is still a failed pipeline.
 
 > `embed-playground eval --tier dense --detail`
+
+=======
+Before reaching fo
+>>>>>>> Stashed changes
+
+## 2026-11-14 — Retrieval tip of the day: Paraphrase queries separate lexical from semantic
+
+If every query shares words with its answer doc, lexical wins and you learn nothing. Write paraphrase queries ('bots steal my trades') to see what dense retrieval actually buys.
+
+> `embed-playground compare how do bots steal money from my trades`
 
